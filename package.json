@@ -1,0 +1,16 @@
+{
+  "name": "passenger-seat",
+  "title": "passenger-seat",
+  "description": "Helper for setting application environment within Phusion Passenger for Apache",
+  "version": "0.0.1",
+  "homepage": "git@github.com:otterthecat/passenger-seat.git",
+  "author": {
+    "name": "Otter the Cat",
+    "email": "otc@otterthecat.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:otterthecat/passenger-seat.git"
+  },
+  "keywords": ["Phusion Passenger", "Apache"]
+}
