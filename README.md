@@ -7,8 +7,8 @@ A convience module for when your Dev & Prod machines differ in that one uses Phu
 ## Why dont' you use PhusionPassenger in both dev & prod?
 Because shut up.
 
-## Will this also work with PhusionPassgener for Nginx and/or Standalone?
-No idea, as these are both untested, and I have only ever used it with Phusion Passenger for Apache.
+## Will this also work with Phusion Passgener for Nginx and/or Standalone?
+No idea, as these are both untested, and I have only ever used it with Phusion Passenger for Apache. However, I would suspect that it would work with Nginx as well, and not be needed at all for Phusion Passenger Standalone, since it will only run a single app at any given time.
 
 ## How do I use it?
 Just include & call it:
@@ -17,7 +17,7 @@ var port = require('./passenger-seat')();
 ```
 This will configure the PhusionPassenger object (if exists) and return the string of "passenger" to be used when you pass a port to your app.
 
-If the PhusionPassenger object does not exist, it will by default return the port number of "1337".
+If the PhusionPassenger object does not exist, it will first try to return the value of process.env.PORT (if set), otherwise it will use the default - which is '1337'.
 
 To set your own default port number, you can simply pass it into the call like so:
 

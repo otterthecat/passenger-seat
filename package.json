@@ -2,15 +2,36 @@
   "name": "passenger-seat",
   "title": "passenger-seat",
   "description": "Helper for setting application environment within Phusion Passenger for Apache",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "git@github.com:otterthecat/passenger-seat.git",
   "author": {
     "name": "Otter the Cat",
     "email": "otc@otterthecat.com"
   },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.23"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com:otterthecat/passenger-seat.git"
   },
-  "keywords": ["Phusion Passenger", "Apache"]
+  "bugs": {
+    "url": "https://github.com/otterthecat/passenger-seat/issues/new"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "gulp-util": "~2.2.14",
+    "gulp": "~3.5.2",
+    "gulp-coverage": "0.0.17",
+    "gulp-mocha": "~0.4.1",
+    "gulp-blanket-mocha": "0.0.4",
+    "gulp-jscoverage": "~0.1.0",
+    "gulp-istanbul": "~0.1.0"
+  },
+  "keywords": ["Phusion Passenger", "Apache", "Ports", "otc"]
 }
