@@ -4,7 +4,9 @@ var chai = require('chai').should();
 
 // stubs
 // /////////////////////////////////////////////////////////
-
+var fauxPassenger = {
+    configure: function(){}
+};
 
 
 // modules to test
@@ -12,6 +14,13 @@ var chai = require('chai').should();
 var seat = require('../../index');
 
 describe('Passenger-Seat', function(){
+
+    it('should return "passenger" if PhusionPassenger object exists', function(){
+
+        global.PhusionPassenger = fauxPassenger;
+        seat().should.equal('passenger');
+        PhusionPassenger = undefined;
+    });
 
     it('should return evironment port if both no argument is passed and Passenger object doesn\'t exist', function(){
 
