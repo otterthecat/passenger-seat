@@ -1,16 +1,20 @@
-# Passenger-Seat
+# Depcrecated
+With recent (and awesome) updates to [Phusion Passenger](https://www.phusionpassenger.com/) this module doesn't serve much of a purpose anymore.
+You should really [look at very readable documentation](https://www.phusionpassenger.com/library/) if you want to run node on your VPS. Seriously.
+
+## Passenger-Seat
 Helper for setting application environment within Phusion Passenger for Apache
 
-## What is it?
+### What is it?
 A convience module for when your Dev & Prod machines differ in that one uses Phusion Passenger for Apache to deploy Node apps, and you don't want to change configurations.
 
-## Why dont' you use PhusionPassenger in both dev & prod?
+### Why dont' you use PhusionPassenger in both dev & prod?
 Because shut up.
 
-## Will this also work with Phusion Passgener for Nginx and/or Standalone?
+### Will this also work with Phusion Passgener for Nginx and/or Standalone?
 No idea, as these are both untested, and I have only ever used it with Phusion Passenger for Apache. However, I would suspect that it would work with Nginx as well, and not be needed at all for Phusion Passenger Standalone, since it will only run a single app at any given time.
 
-## How do I use it?
+### How do I use it?
 Just include & call it:
 ```javascript
 var port = require('./passenger-seat')();
